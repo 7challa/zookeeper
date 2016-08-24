@@ -25,6 +25,7 @@
 # up the JVM to accept JMX remote management:
 # http://java.sun.com/javase/6/docs/technotes/guides/management/agent.html
 # by default we allow local JMX connections
+export ZOO_DATADIR_AUTOCREATE_DISABLE=1
 if [ "x$JMXLOCALONLY" = "x" ]
 then
     JMXLOCALONLY=false
